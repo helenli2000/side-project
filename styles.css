@@ -1,0 +1,30 @@
+body{
+    background-color: white;
+}
+
+.menu-category{
+    border: 1px solid black;
+    background-color: rgb(126, 228, 247);
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.category-name{
+    margin: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.menu-item-wrapper{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.item-price{  
+    float: right;
+}
