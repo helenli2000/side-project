@@ -5,8 +5,40 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="header">
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">LOGO</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">New Updates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!--<div class="header">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="mobile-navbar">
+            <a href="homepage.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="update.html">New Updates</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
         <a href="homepage.html"><img src="artILY_logo.png" alt="Art Gallary" class="main-logo"></a>
     </div>
 
@@ -15,8 +47,7 @@
         <a href="menu.html">Menu</a>
         <a href="update.html">New Updates</a>
         <a href="contact.html">Contact Us</a>
-    </div>
-    <br>
+    </div>-->
     <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -98,5 +129,24 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   timer = setTimeout(showSlides, 3000);
 } 
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
 </script>
 </html>
