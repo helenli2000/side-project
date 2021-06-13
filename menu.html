@@ -10,10 +10,10 @@
             <a href="#" class="nav-logo">LOGO</a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About Us</a>
+                    <a href="homepage.html" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="menu.html" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">New Updates</a>
@@ -23,9 +23,7 @@
                 </li>
             </ul>
             <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                More
             </div>
         </nav>
     </header>
@@ -554,4 +552,24 @@
     <p class="footer-extra">Fax: 215-790-1888</p>
 </footer>
     -->
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+</script>
 </html>
