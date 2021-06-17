@@ -19,7 +19,7 @@
                     <a href="update.html" class="nav-link">New Updates</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contaxt.html" class="nav-link">Contact Us</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -32,30 +32,25 @@
     
     <br>
 
-    <!--
-    <div class="sidenav">
-        <a href>Appetizers</a>
-        <a href>Salad</a>
-        <a href>Soup</a>
-        <a href>Vegetables/Bean Curd</a>
-        <a href>Entrees</a>
-        <a href>Fried Rice</a>
-        <a href>Lo Mein</a>
-        <a href>Mei Fun</a>
-        <a href>Chow Mein</a>
-        <a href>On The Side</a>
-        <a href>Combination Platters</a>
-        <a href>Sushi or Sashimi A La Carte</a>
-        <a href>Rolls or Hand Rolls</a>
-        <a href>Sushi or Sashimi Entrees</a>
-        <a href>Party Tray</a>
-        <a href>Signature Rolls</a>
-        <a href>Luncheon Specials</a>
-        <a href>Lunch Special From Sushi Bar</a>
-    </div>
-    -->
-
     <div class="menu-category">
+        <button type="button" class="collapsible">Appetizers</button>
+        <div class="content">
+            <div class="item-name">
+                Egg Roll (1)
+                <div class="item-price">
+                    $2.00
+                </div>
+            </div>
+        </div>
+        <button type="button" class="collapsible">Appetizers</button>
+        <div class="content">
+            <div class="item-name">
+                Egg Roll (1)
+                <div class="item-price">
+                    $2.00
+                </div>
+            </div>
+        </div>
         <div class="category-name">Appetizers</div>
         <div class="menu-item-wrapper">
             <div class="item-name">
@@ -489,58 +484,15 @@
         </div>
         <br>
     </div>
-
-    <!--
-    <div class="college-collage">
-      <img class="main-image" src="college-collage.jpeg" alt="Philadelphia Future's Picture">
-    </div>
-
-    <div class="contact-form">   
-      <form>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="email">Email Address</label>
-          <input type="text" id="email" name="email" placeholder="Your email address..">
-
-          <label for="program">Program</label>
-          <select id="program" name="program">
-            <option value="SAS">Sponsor A Scholar</option>
-            <option value="CC">College Connection</option>
-            <option value="other">Other</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" 
-          placeholder="Write your message here. We will get back to you as soon as we can." 
-          style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-      </form>
-    </div>
-
-    <div class="college-collage">
-      <img class="main-image" src="college-collage-2.jpeg" alt="Philadelphia Future's Picture">
-    </div>
-
-    <div class="message" style="text-align:center;">
-        <h4>We look forward to hearing from you all!</h4>
-        <h4>Check your email for updates!</h4>
-    </div> -->
 </body>
-
-<!---
-<footer>
-    <p class="footer-extra"><b>Philadelphia Futures</b></p>
-    <p class="footer-extra">123 South Broad Street, Suite 850 <br>
-        Philadelphia, PA 19109 </p>
-    <p class="footer-extra">Phone: 215-790-1666</p>
-    <p class="footer-extra">Fax: 215-790-1888</p>
+<footer class="footer">
+    <br>
+    <p><b>China Wok</b></p>
+    <p>545 Rockledge Avenue</p>
+    <p>Huntingdon Valley, PA 19006</p><br>
+    <a href="tel:2153791322">(215)-379-1322</a><br>
+    <a href="https://www.facebook.com/ChinaWokHV">Add Us on Facebook for Updates</a>
 </footer>
-    -->
 <script>
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -559,6 +511,21 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("col-active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }
 </script>
 </html>

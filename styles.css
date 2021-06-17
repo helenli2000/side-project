@@ -210,9 +210,10 @@ body{
 }
 
 .sidenav {
-    position: fixed;
+    margin-top: 45px;
     left: 10px;
     background: #eee;
+    margin-left: 15px;
   }
   
   .sidenav a {
@@ -226,6 +227,65 @@ body{
   .sidenav a:hover {
     color: #064579;
   }
+
+/* Collapse Feature*/
+.collapsible {
+    background-color: rgb(134, 136, 141);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .col-active, .collapsible:hover {
+    background-color: rgb(196, 198, 204);
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+.page {
+  display:grid;
+  width:100%;
+  grid-template-areas: "left col1 col2";
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.left-sidebar {
+  grid-area: left;
+}
+
+.column1 {
+  grid-area: col1;
+}
+
+.column2 {
+  grid-area: col2;
+}
 
 @media only screen and (min-device-width: 500px){
     .slideshow-container {
