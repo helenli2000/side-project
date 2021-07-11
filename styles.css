@@ -65,8 +65,8 @@ body{
 
 /* Menu Content */
 .menu-category{
-    margin: 45px;
-    padding: 15px;
+    margin: 15px 45px;
+    padding: 0px 15px;
     background-color: rgba(255, 255, 255, 0.75);
 }
 
@@ -230,29 +230,30 @@ body{
 
 /* Collapse Feature*/
 .collapsible {
-    background-color: rgb(134, 136, 141);
+    background-color: rgba(255, 255, 255, 0);
     color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 15px;
     margin-top: 15px;
+    border-bottom: none;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .col-active, .collapsible:hover {
-    background-color: rgb(196, 198, 204);
+    background-color: rgba(255, 255, 255, 0);
   }
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
-    padding: 0 18px;
+    padding: 1.5rem;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .collapsible:after {
@@ -290,6 +291,9 @@ body{
 @media only screen and (min-device-width: 500px){
     .slideshow-container {
         max-width: 85%;
+    }
+    .content {
+        column-count: 2;
     }
 }
 
