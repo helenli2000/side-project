@@ -86,7 +86,6 @@ body{
 }
 
 .item-name{
-    margin-top: 10px;
 }
 .item-price{  
     float: right;
@@ -299,6 +298,10 @@ body{
     }
     .content {
         column-count: 2;
+        font-size: 1.5rem;
+    }
+    .collapsible {
+        font-size: 2rem;
     }
 }
 
