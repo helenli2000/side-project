@@ -1,6 +1,7 @@
 body{
     background-color: white;
     margin: 0 auto;
+    font-family: "papyrus";
 }
 
 /* Header and Nav Bar */
@@ -13,14 +14,15 @@ body{
 }
 
 .header {
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid white;
+    background-color: white;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem 0rem 1.5rem;
 }
 
 .hamburger {
@@ -48,7 +50,7 @@ body{
 }
 
 .nav-link{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #475569;
 }
@@ -58,7 +60,7 @@ body{
 }
 
 .nav-logo {
-    font-size: 2.1rem;
+    font-size: 1.575rem;
     font-weight: 500;
     color: #482ff7;
 }
@@ -67,7 +69,7 @@ body{
 .menu-category{
     margin: 15px 45px;
     padding: 0px 15px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .category-name{
@@ -169,6 +171,7 @@ body{
     background-color:#000;
     color:#f2f2f2;
     height: 250px;
+    text-align: center;
 }
 
 .footer p{
@@ -185,7 +188,7 @@ body{
 }
 
 .body-background{
-    background: url("https://i.pinimg.com/originals/e1/b2/2c/e1b22c8ee5f1f82d05e55ec032f7f98e.jpg") no-repeat center center fixed;
+    background: url(frontpage.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -223,9 +226,9 @@ body{
     text-align: center;
     outline: none;
     font-size: 48px;
-    font-weight: bold;
+    font-weight: bolder;
     border-bottom: none;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "papyrus";
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -326,3 +329,13 @@ body{
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/* .online-order {
+    width:50%; 
+    float: left;
+}
+
+.phone-order {
+    width:50%; 
+    float: right;
+} */
