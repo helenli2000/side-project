@@ -348,6 +348,15 @@ body{
     .footer a{
         font-size:2rem;
     }
+
+    .nav-logo {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        font-size: 3rem;
+        padding: 1rem 3rem 0.5rem 3rem;
+    }
 }
 
 /* .online-order {
