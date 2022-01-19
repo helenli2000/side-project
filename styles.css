@@ -29,6 +29,11 @@ body{
     display: none;
 }
 
+.logo-image {
+    height: 30%; 
+    width: 30%;
+}
+
 .bar {
     display: block;
     width: 25px;
@@ -63,6 +68,7 @@ body{
     font-size: 1.575rem;
     font-weight: 500;
     color: #482ff7;
+    padding-top: 5px;
 }
 
 /* Menu Content */
@@ -289,7 +295,7 @@ body{
 
 @media only screen and (min-device-width: 500px){
     .slideshow-container {
-        max-width: 85%;
+        max-width: 100%;
     }
     .content {
         column-count: 2;
@@ -328,6 +334,15 @@ body{
 
     .nav-item a {
         font-size: 2.25rem;
+    }
+
+    .nav-logo {
+        padding-top: 15px;
+    }
+
+    .logo-image {
+        height: 50%; 
+        width: 50%;
     }
 
     .about-us {
