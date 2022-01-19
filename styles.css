@@ -324,8 +324,8 @@ body{
         left: 0;
         z-index: 1;
         position: absolute;
-        font-size: 0.5rem;
-        background-color: lightgray;
+        font-size: 5rem;
+        background-color: white;
     }
     .nav-item {
         margin: 1rem 0;
@@ -334,6 +334,7 @@ body{
 
     .nav-item a {
         font-size: 2.25rem;
+        color: black;
     }
 
     .nav-logo {
