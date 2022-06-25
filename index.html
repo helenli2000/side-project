@@ -4,7 +4,7 @@
 <title>China Wok, Huntington Valley</title>
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="showModal()">
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="nav-logo">
@@ -26,6 +26,26 @@
             </div>
         </nav>
     </header>
+
+    
+   <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>
+        <h2 style="color:red">NOW SEATING DINE IN! </h2> <br>
+        Limited Time Offer: <br>
+        Buy 3 Bobas, Get 1 Boba! <br> <br>
+        OR <br> <br>
+        Spend $30, get 1 free boba <br> Spend $50, get 2 free boba! <br>
+          (Expires on July 31st, 2022)
+      </p>
+    </div>
+  
+  </div>
+
     <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -141,6 +161,30 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+}
+
+function showModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+    modal.style.opacity='1';
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 </script>
 </html>
